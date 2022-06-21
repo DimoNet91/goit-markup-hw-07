@@ -1,0 +1,63 @@
+.section-team {
+  background-color: var(--background-button-color);
+}
+.team-list__title {
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+}
+.team-list__text,
+.team-list__title {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+.team-list__text {
+  margin-bottom: 16px;
+}
+.team-list__list {
+  --card-item: 4;
+}
+.team-list__con {
+  padding: 30px;
+}
+.team-list__item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.socials {
+  display: flex;
+}
+.socials__item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.socials__item:last-child {
+  margin-right: 0px;
+}
+.socials__link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--button-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition);
+}
+
+.socials__icon {
+  transition: fill var(--transition);
+  fill: var(--background-icon-color);
+}
+.socials__link:hover,
+.socials__link:focus {
+  background-color: var(--accent-color);
+}
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: var(--button-color);
+}
