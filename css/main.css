@@ -539,11 +539,11 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .time-soc-link {
+.footer .socials__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .time-soc-icon {
+.footer .socials__icon {
   fill: var(--logo-white);
 }
 
@@ -551,8 +551,8 @@ body {
   fill: var(--button-color);
 }
 
-.footer .time-soc-link:hover,
-.footer .time-soc-link:focus {
+.footer .socials__link:hover,
+.footer .socials__link:focus {
   background-color: var(--accent-color);
 }
 
