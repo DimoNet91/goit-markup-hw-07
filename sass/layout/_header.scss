@@ -3,12 +3,13 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   border: 1px solid #ececec;
+  .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
-.page-header .logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+
 .header-nav {
   display: flex;
   align-items: center;

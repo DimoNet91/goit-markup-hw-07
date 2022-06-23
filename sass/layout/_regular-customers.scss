@@ -9,10 +9,6 @@
 .clients-list {
   --card-item: 6;
 }
-.clients-icon-link:hover,
-.clients-icon-link:focus {
-  border: 1px solid var(--accent-color);
-}
 
 .clients-icon-link {
   width: 100%;
@@ -24,12 +20,16 @@
   justify-content: center;
   border: 1px solid #afb1b8;
   transition: border var(--transition);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 .clients-cpmany-icon {
   transition: fill var(--transition);
   fill: #afb1b8;
-}
-.clients-icon-link:hover .clients-cpmany-icon,
-.clients-icon-link:focus .clients-cpmany-icon {
-  fill: var(--accent-color);
+  .clients-icon-link:hover &,
+  .clients-icon-link:focus & {
+    fill: var(--accent-color);
+  }
 }

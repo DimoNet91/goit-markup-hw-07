@@ -6,9 +6,7 @@
   top: 0;
   transition: opacity var(--transition), visibility 350ms;
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
+
 .modal {
   width: 528px;
   height: 581px;
@@ -22,6 +20,9 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition);
   padding: 40px;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
 .modal-title {
   font-weight: 700;
@@ -35,11 +36,12 @@
 .svg-button-modal {
   fill: var(--logo-black);
   transition: fill var(--transition);
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
-.svg-button-modal:focus,
-.svg-button-modal:hover {
-  fill: var(--accent-color);
-}
+
 .button-modal-clouse {
   width: 30px;
   height: 30px;
@@ -52,11 +54,12 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  &:focus .svg-button-modal,
+  &:hover .svg-button-modal {
+    fill: var(--accent-color);
+  }
 }
-.button-modal-clouse:focus .svg-button-modal,
-.button-modal-clouse:hover .svg-button-modal {
-  fill: var(--accent-color);
-}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -74,21 +77,22 @@
   outline: none;
   cursor: pointer;
   transition: border var(--transition);
+  &:focus,
+  &:hover {
+    border: 1px solid var(--accent-color);
+  }
 }
-.modal-input:focus,
-.modal-input:hover {
-  border: 1px solid var(--accent-color);
-}
-.modal-input:focus + .modal-icon,
-.modal-input:hover + .modal-icon {
-  fill: var(--accent-color);
-}
+
 .modal-icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill var(--transition);
+  .modal-input:focus + &,
+  .modal-input:hover + & {
+    fill: var(--accent-color);
+  }
 }
 .modal-label {
   font-size: 12px;
@@ -106,15 +110,7 @@
   padding: 12px 16px;
   outline: none;
 }
-.modal-text::placeholder {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-text:focus {
-  border-color: var(--accent-color);
-}
+
 .color-contract {
   color: var(--accent-color);
 }
@@ -123,28 +119,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    margin-right: 9px;
+    .modal-check:checked + & {
+      background-color: var(--accent-color);
+      background-image: url(../images/check.svg);
+      border: 2px solid var(--title-text-color);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .modal-check:hover + &,
+    .modal-check:focus + & {
+      border: 2px solid var(--accent-color);
+    }
+  }
 }
-.checkbox-text::before {
-  content: '';
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
-  margin-right: 9px;
-}
+
 .modal-check {
   margin-left: 13px;
-}
-.modal-check:checked + .checkbox-text::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/check.svg);
-  border: 2px solid var(--title-text-color);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.modal-check:hover + .checkbox-text::before,
-.modal-check:focus + .checkbox-text::before {
-  border: 2px solid var(--accent-color);
 }
 
 .subscribe-btn-icon {

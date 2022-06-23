@@ -85,7 +85,6 @@ body {
   letter-spacing: 0.02em;
   border: 1px solid #ececec;
 }
-
 .page-header .logo {
   margin-right: 93px;
   padding-top: 24px;
@@ -241,9 +240,7 @@ body {
   margin-left: auto;
   transition: background var(--transition);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background: #188ce8;
 }
 
@@ -377,7 +374,6 @@ body {
   height: 44px;
   margin-right: 10px;
 }
-
 .socials__item:last-child {
   margin-right: 0px;
 }
@@ -392,19 +388,15 @@ body {
   justify-content: center;
   transition: background-color var(--transition);
 }
+.socials__link:hover, .socials__link:focus {
+  background-color: var(--accent-color);
+}
 
 .socials__icon {
   transition: fill var(--transition);
   fill: var(--background-icon-color);
 }
-
-.socials__link:hover,
-.socials__link:focus {
-  background-color: var(--accent-color);
-}
-
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
+.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
   fill: var(--button-color);
 }
 
@@ -421,11 +413,6 @@ body {
   --card-item: 6;
 }
 
-.clients-icon-link:hover,
-.clients-icon-link:focus {
-  border: 1px solid var(--accent-color);
-}
-
 .clients-icon-link {
   width: 100%;
   height: 92px;
@@ -437,14 +424,15 @@ body {
   border: 1px solid #afb1b8;
   transition: border var(--transition);
 }
+.clients-icon-link:hover, .clients-icon-link:focus {
+  border: 1px solid var(--accent-color);
+}
 
 .clients-cpmany-icon {
   transition: fill var(--transition);
   fill: #afb1b8;
 }
-
-.clients-icon-link:hover .clients-cpmany-icon,
-.clients-icon-link:focus .clients-cpmany-icon {
+.clients-icon-link:hover .clients-cpmany-icon, .clients-icon-link:focus .clients-cpmany-icon {
   fill: var(--accent-color);
 }
 
@@ -453,11 +441,9 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer .logo {
   margin-bottom: 20px;
 }
-
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
@@ -522,7 +508,6 @@ body {
   height: 44px;
   margin-right: 10px;
 }
-
 .footer-soc-item:last-child {
   margin-right: 0px;
 }
@@ -590,9 +575,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-list__item:hover,
-.button-list__item:focus {
+.button-list__item:hover, .button-list__item:focus {
   background-color: var(--accent-color);
   color: var(--background-button-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -637,9 +620,7 @@ body {
   flex-direction: column;
   transition: box-shadow var(--transition);
 }
-
-.layouts-link:hover,
-.layouts-link:focus {
+.layouts-link:hover, .layouts-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -649,13 +630,12 @@ body {
   border-top: none;
 }
 
-.layouts-thumb:hover::before .layouts-thumb:focus::before {
-  opacity: 1;
-}
-
 .layouts-thumb {
   position: relative;
   overflow: hidden;
+}
+.layouts-thumb:hover::before .layouts-thumb:focus::before {
+  opacity: 1;
 }
 
 .layouts-cards:hover .layouts-thumb::before {
@@ -674,9 +654,7 @@ body {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.layouts-link:hover .layouts-top-text,
-.layouts-link:focus .layouts-top-text {
+.layouts-link:hover .layouts-top-text, .layouts-link:focus .layouts-top-text {
   transform: translateY(0);
 }
 
@@ -687,10 +665,6 @@ body {
   position: fixed;
   top: 0;
   transition: opacity var(--transition), visibility 350ms;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal {
@@ -705,6 +679,9 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition);
   padding: 40px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-title {
@@ -721,9 +698,7 @@ body {
   fill: var(--logo-black);
   transition: fill var(--transition);
 }
-
-.svg-button-modal:focus,
-.svg-button-modal:hover {
+.svg-button-modal:focus, .svg-button-modal:hover {
   fill: var(--accent-color);
 }
 
@@ -740,9 +715,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-
-.button-modal-clouse:focus .svg-button-modal,
-.button-modal-clouse:hover .svg-button-modal {
+.button-modal-clouse:focus .svg-button-modal, .button-modal-clouse:hover .svg-button-modal {
   fill: var(--accent-color);
 }
 
@@ -766,15 +739,8 @@ body {
   cursor: pointer;
   transition: border var(--transition);
 }
-
-.modal-input:focus,
-.modal-input:hover {
+.modal-input:focus, .modal-input:hover {
   border: 1px solid var(--accent-color);
-}
-
-.modal-input:focus + .modal-icon,
-.modal-input:hover + .modal-icon {
-  fill: var(--accent-color);
 }
 
 .modal-icon {
@@ -783,6 +749,9 @@ body {
   top: 50%;
   transform: translateY(-50%);
   transition: fill var(--transition);
+}
+.modal-input:focus + .modal-icon, .modal-input:hover + .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-label {
@@ -803,17 +772,6 @@ body {
   outline: none;
 }
 
-.modal-text::placeholder {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-text:focus {
-  border-color: var(--accent-color);
-}
-
 .color-contract {
   color: var(--accent-color);
 }
@@ -824,7 +782,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .checkbox-text::before {
   content: "";
   width: 16px;
@@ -833,11 +790,6 @@ body {
   border-radius: 2px;
   margin-right: 9px;
 }
-
-.modal-check {
-  margin-left: 13px;
-}
-
 .modal-check:checked + .checkbox-text::before {
   background-color: var(--accent-color);
   background-image: url(../images/check.svg);
@@ -845,10 +797,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.modal-check:hover + .checkbox-text::before,
-.modal-check:focus + .checkbox-text::before {
+.modal-check:hover + .checkbox-text::before, .modal-check:focus + .checkbox-text::before {
   border: 2px solid var(--accent-color);
+}
+
+.modal-check {
+  margin-left: 13px;
 }
 
 .subscribe-btn-icon {
