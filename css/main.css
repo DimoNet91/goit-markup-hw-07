@@ -149,19 +149,6 @@ body {
   padding-bottom: 32px;
 }
 
-.logo-black {
-  color: var(--logo-black);
-}
-
-.logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
-  display: flex;
-}
-
 .site-nav .link:hover,
 .site-nav .link:focus,
 .active {
@@ -185,9 +172,21 @@ body {
   fill: var(--accent-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.logo-black {
+  color: var(--logo-black);
+}
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  display: flex;
+}
+
+.logo-white {
+  color: var(--logo-white);
 }
 
 .hero {
@@ -293,19 +292,6 @@ body {
   margin-bottom: 10px;
 }
 
-.section-worck {
-  padding-top: 0px;
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 50px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
-}
-
 .process-list {
   --card-gep-top: 50px;
   --card-gep-left: 30px;
@@ -328,10 +314,6 @@ body {
   width: 100%;
   padding: 27px;
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.section-team {
-  background-color: var(--background-button-color);
 }
 
 .team-list__title {
@@ -453,10 +435,6 @@ body {
   transition: color var(--transition);
 }
 
-.logo-white {
-  color: var(--logo-white);
-}
-
 .join {
   font-weight: 700;
   line-height: 16px;
@@ -552,6 +530,28 @@ body {
 
 .footer-item:last-child {
   margin-left: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-worck {
+  padding-top: 0px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.section-team {
+  background-color: var(--background-button-color);
 }
 
 .section-project {
